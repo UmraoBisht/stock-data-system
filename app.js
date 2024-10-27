@@ -10,6 +10,10 @@ connectToDB();
 
 app.use("/api", stockRoutes);
 
+app.all("*", (_, res) => {
+  res.status(404).json({ message: "Page not found" }); // 404 handler
+});
+
 // global eror handeling
 app.use((err, req, res, next) => {
   res.status(500).json({ message: err.message });

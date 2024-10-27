@@ -17,5 +17,8 @@ router.post("/upload", upload.single("file"), uploadStockData);
 router.get("/highest_volume", getHighestVolume);
 router.get("/average_close", getAverageClose);
 router.get("/average_vwap", getAverageVWAP);
+router.all("*",(_,res)=>{
+  return res.status(404).json({ message: "Not found!" });
+})
 
 export default router;
