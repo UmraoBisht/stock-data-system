@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for uploaded files
+uploads/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Jest coverage and cache
+coverage/
+.jest/
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Babel and ESLint cache
+.babelrc
+.eslintcache
+
+# TypeScript output
+*.tsbuildinfo
